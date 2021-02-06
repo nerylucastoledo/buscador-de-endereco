@@ -2,4 +2,5 @@
 
 ### Programa criado para treinar alguns conceitos de JavaScript
 
-Você pode ver o resultado aqui: [site]('https://buscadorcep.netlify.app/')
+Você pode ver o resultado aqui: [site](https://buscadorcep.netlify.app/)
+
