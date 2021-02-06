@@ -1,6 +1,6 @@
-## Um buscador de cep basico
+## Um buscador de endereço basico
 
 ### Programa criado para treinar alguns conceitos de JavaScript
 
-Você pode ver o resultado aqui: [site](https://buscadorcep.netlify.app/)
+Você pode ver o resultado aqui: [site](https://buscarendereco.netlify.app/)
 
