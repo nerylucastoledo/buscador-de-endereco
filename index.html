@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Cep</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div class="principal">
+
+            <div class="container">
+                <h1>Pesquisar por:</h1>
+                
+                <button id="buscarPeloCep">CEP</button>
+                <p>X</p>
+                <button id="buscarPelaRua">RUA</button>
+
+                <div class="tabelaCep">
+                    <h1>Buscar pelo CEP</h1>
+                    <label for="Numerocep" id="digitarCep"></label>
+                    <input id="Numerocep" type="text" placeholder="Digite o cep">
+                    <button type="submit" class="pesquisar"><i class="fa fa-search"></i></button>
+                </div>
+        
+                <div class="tabelaRua">
+                    <h1>Buscar pela Rua</h1>
+                    <label for="estado" id="digitarEstado">UF</label>
+                    <input id="estado" type="text" placeholder="Digite o UF">
+    
+                    <label for="cidade" id="digitarCidade">Cidade</label>
+                    <input id="cidade" type="text" placeholder="Digite a cidade">
+    
+                    <label for="rua" id="digitarRua">Nome da rua</label>
+                    <input id="rua" type="text" placeholder="Digite a rua...">
+    
+                    <button type="submit" class="pesquisarPorRua"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Logradouro</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>UF</th>
+                        <th>CEP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="logradouro"></td>
+                        <td id="bairro"></td>
+                        <td id="local"></td>
+                        <td id="uf"></td>
+                        <td id="cep"></td>
+                    </tr>
+                </tbody>
+              </table>  
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
