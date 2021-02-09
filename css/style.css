@@ -1,6 +1,5 @@
 .principal {
     display: block;
-    max-width: 600px;
     margin: 0 auto;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.13);
@@ -73,11 +72,11 @@ button  {
 table {
     background-color: rgba(0, 0, 0, 0.521);
     color: #fff;
-    padding: 20px;
     text-align: center;
     margin: 40px auto;
-    max-width: 600px;
     border-top: 1px solid #fff;
+    width: 100%; 
+    border-collapse: collapse; 
 }
 tbody {
     background-color: rgba(0, 255, 255, 0.616);
@@ -85,4 +84,14 @@ tbody {
 th, td {
     padding: 10px 20px;
     border: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+@media (max-width: 739px) {
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+    thead {
+        display: none;
+    }
 }
