@@ -57,6 +57,7 @@ function puxarCep(url) {
     const uf = document.getElementById('uf')
     const cep = document.getElementById('cep')
     const local = document.getElementById('local')
+    const table = document.querySelector('table')
     
     const infoUrl = url
 
@@ -67,6 +68,7 @@ function puxarCep(url) {
         if(body.length == 0 || body.length > 1) {
             mostrarErro('Endereço incorreto')
         } else if (body.length == 1){
+            table.style.display = 'table'
             logradouro.innerText = body[0].logradouro
             bairro.innerText = body[0].bairro
             uf.innerText = body[0].uf
@@ -75,6 +77,7 @@ function puxarCep(url) {
             Numerocep.value = ""
         }
          else {
+            table.style.display = 'table'
             logradouro.innerText = body.logradouro
             bairro.innerText = body.bairro
             uf.innerText = body.uf

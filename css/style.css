@@ -54,8 +54,13 @@ button  {
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
-    width: 100px;
+    width: 110px;
     padding: 5px 10px;
+}
+.tabelaCep button, .tabelaRua button {
+    background-color: rgba(54, 56, 56, 0.616);
+    border: 1px solid #000;
+    margin-top: 40px;
 }
 .tabelaRua, .tabelaCep {
     border-top: 1px solid rgba(0, 255, 255, 0.616);
@@ -76,7 +81,8 @@ table {
     margin: 40px auto;
     border-top: 1px solid #fff;
     width: 100%; 
-    border-collapse: collapse; 
+    border-collapse: collapse;
+    display: none;
 }
 tbody {
     background-color: rgba(0, 255, 255, 0.616);
@@ -88,7 +94,10 @@ th, td {
 }
 
 @media (max-width: 739px) {
-    table, thead, tbody, th, td, tr { 
+    table {
+        display: none;
+    }
+    tbody, th, td, tr { 
 		display: block; 
 	}
     thead {
