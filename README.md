@@ -3,5 +3,5 @@
 ### Programa criado para treinar alguns conceitos de JavaScript
 ### Ainda falta terminar a parte do CSS.
 
-Você pode ver o resultado aqui: [site](https://buscarendereco.netlify.app/)
+Você pode ver o resultado aqui: [Clique aqui](https://buscarendereco.netlify.app/)
 
